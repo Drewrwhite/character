@@ -1,3 +1,11 @@
+function hideResults() {
+  document.getElementById("orcImage").setAttribute("class", "hidden");
+  document.getElementById("elfImage").setAttribute("class", "hidden");
+  document.getElementById("dwarfImage").setAttribute("class", "hidden");
+  document.getElementById("mortalImage").setAttribute("class", "hidden");
+}
+
+
 window.addEventListener("load", function () {
 
   const form = document.querySelector("form");
@@ -5,6 +13,7 @@ window.addEventListener("load", function () {
 
   form.addEventListener("submit", function (event) {
     event.preventDefault();
+    hideResults();
     const characterName = document.querySelector("input#characterName").value;
     const dob = document.querySelector("input#born").value;
     const radioButton = document.querySelector("input[name='charType']:checked").value;
