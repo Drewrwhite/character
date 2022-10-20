@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Character Builder</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/scripts.js"></script>
+</head>
+<body class="container text-center">
+  <h1>Character Builder</h1>
+  <form id="character">
+    <label for="characterName">Enter your name:</label>
+    <input id="characterName" type="text">
+    
+    <label for="born">Date of birth:</label>
+    <input id="born" type="date">
+
+
+
+    <p>Choose your character type:</p>
+    <label>
+      <input type="radio" name="charType" value="orc" checked>
+      Orc
+    </label>
+    <label>
+      <input type="radio" name="charType" value="elf">
+      Elf
+    </label>
+    <label>
+      <input type="radio" name="charType" value="dwarf">
+      Dwarf
+    </label>
+    <label>
+      <input type="radio" name="charType" value="mortal">
+      Mortal
+    </label>
+    <br>
+    <br>
+    Select your class:
+    <select id="classType">
+      <option>Mage</option>
+      <option>Warrior</option>
+      <option>Assassin</option>
+      <option>Bard</option>
+      <option>Scientist</option>
+    </select>
+    <br>
+    <br>
+    <label for="color">Desired hair color:</label>
+    <input id="color" type="color">
+    <br>
+    <button type="submit" class="button">Go!</button>
+  </form>
+  <br>
+  <h2>Results</h2>
+  <p id="output"></p>
+</body>
+</html>
