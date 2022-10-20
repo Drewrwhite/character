@@ -5,3 +5,11 @@ body {
 .button {
   border: 5px solid green;
 }
+
+.hidden {
+  display: none;
+}
+
+img {
+  width: 500px;
+}

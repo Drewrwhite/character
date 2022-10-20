@@ -15,11 +15,9 @@
     <label for="born">Date of birth:</label>
     <input id="born" type="date">
 
-
-
     <p>Choose your character type:</p>
     <label>
-      <input type="radio" name="charType" value="orc" checked>
+      <input type="radio" name="charType" value="orc">
       Orc
     </label>
     <label>
@@ -52,7 +50,25 @@
     <button type="submit" class="button">Go!</button>
   </form>
   <br>
+  <div id="summary" class="hidden">
   <h2>Results</h2>
-  <p id="output"></p>
+  <p>Your character's name is <span id="resultName">____</span>. You were born on <span id="resultDob">____</span>, during the second age. Your character type is: <span id="resultCharType">____</span>. Your class is <span id="resultClassType">____</span>, and your hair color is <span id ="resultColor">____</span>. Enjoy your adventures and don't take an arrow to the knee!</p>
+</div>
+<div id="orcImage" class="hidden">
+  <h1>You are an Orc!</h1>
+  <img src="https://blogdigger.com/wp-content/uploads/2022/07/Female-Orc-0.jpg" alt="picture of an orc">
+</div>
+<div id="elfImage" class="hidden">
+  <h1>You are an Elf!</h1>
+  <img src="https://s7.orientaltrading.com/is/image/OrientalTrading/13807523?$PDP_VIEWER_IMAGE$" alt="picture of an elf">
+</div>
+<div id="dwarfImage" class="hidden">
+  <h1>You are an Dwarf!</h1>
+  <img src="https://www.dndbeyond.com/avatars/thumbnails/6/254/420/618/636271781394265550.png" alt="picture of a dwarf">
+</div>
+<div id="mortalImage" class="hidden">
+  <h1>You are a mere Mortal!</h1>
+  <img src="https://liquipedia.net/commons/images/f/fd/MORTAL.png" alt="picture of a mortal">
+</div>
 </body>
 </html>
